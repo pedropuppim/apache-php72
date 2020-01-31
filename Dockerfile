@@ -32,10 +32,6 @@ php7.2-soap
 
 RUN curl -sS https://getcomposer.org/installer | php -- --version=1.8.4 --install-dir=/usr/local/bin --filename=composer
 
-#RUN chgrp -R www-data /var/www
-#RUN find /var/www -type d -exec chmod 775 {} +
-#RUN find /var/www -type f -exec chmod 664 {} +
-
 RUN sed -i -e 's/^error_reporting\s*=.*/error_reporting = E_ALL/' /etc/php/7.2/apache2/php.ini
 RUN sed -i -e 's/^display_errors\s*=.*/display_errors = On/' /etc/php/7.2/apache2/php.ini
 RUN sed -i -e 's/^zlib.output_compression\s*=.*/zlib.output_compression = Off/' /etc/php/7.2/apache2/php.ini
