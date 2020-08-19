@@ -27,6 +27,7 @@ php7.2-xml \
 php7.2-mbstring \
 php7.2-zip \
 mcrypt \
+php-pear \
 php7.2-interbase \
 php7.2-soap \
 php7.2-memcache
