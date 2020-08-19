@@ -28,6 +28,7 @@ php7.2-mbstring \
 php7.2-zip \
 mcrypt \
 php-pear \
+php5-dev \
 php7.2-interbase \
 php7.2-soap \
 php7.2-memcache
