@@ -27,18 +27,13 @@ php7.2-xml \
 php7.2-mbstring \
 php7.2-zip \
 mcrypt \
-php-pear \
-php5-dev \
 php7.2-interbase \
 php7.2-soap \
 php7.2-memcache
 
 RUN curl -sS https://getcomposer.org/installer | php -- --version=1.8.4 --install-dir=/usr/local/bin --filename=composer
 
-RUN apt-get update -y && \
-    apt-get install -y libmcrypt-dev && \
-    pecl install mcrypt-1.0.1 && \
-    docker-php-ext-enable mcrypt
+RUN docker-php-ext-enable mcrypt
     
     
 RUN sed -i -e 's/^error_reporting\s*=.*/error_reporting = E_ALL/' /etc/php/7.2/apache2/php.ini
