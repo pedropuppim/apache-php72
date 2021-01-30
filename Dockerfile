@@ -29,7 +29,9 @@ php7.2-zip \
 mcrypt \
 php7.2-interbase \
 php7.2-soap \
-php7.2-memcache
+php7.2-memcache \
+php7.2-intl \
+php7.2-redis
 
 RUN curl -sS https://getcomposer.org/installer | php -- --version=1.8.4 --install-dir=/usr/local/bin --filename=composer
 
