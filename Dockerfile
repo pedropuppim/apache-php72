@@ -3,6 +3,9 @@ FROM ubuntu:bionic
 LABEL maintainer="ppuppim@gmail.com"
 LABEL description="Apache 2.4 / PHP 7.2"
 
+# Set working directory
+WORKDIR /var/www/html
+
 RUN apt-get update 
 
 RUN export DEBIAN_FRONTEND=noninteractive
