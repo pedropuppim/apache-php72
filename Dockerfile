@@ -34,7 +34,8 @@ php7.2-interbase \
 php7.2-soap \
 php7.2-memcache \
 php7.2-intl \
-php7.2-redis
+php7.2-redis \ 
+php7.2-tidy
 
 RUN curl -sS https://getcomposer.org/installer | php -- --version=2.3.5 --install-dir=/usr/local/bin --filename=composer
 
